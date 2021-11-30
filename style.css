@@ -98,4 +98,8 @@ img {
   height: auto;
 }
 
-/*# sourceMappingURL=styles.css.map */
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

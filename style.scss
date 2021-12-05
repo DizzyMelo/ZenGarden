@@ -5,11 +5,12 @@
 
 // Styleguide Specific Styling
 html {
-  background-color: white;
+  background-color: $background;
+  font-family: $defaultFont;
 }
 
 body {
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -17,10 +18,16 @@ section,
 header {
   //background-color: $background;
   //background-color: #2e4052;
-  padding: 0.5em 2em 2em 2em;
-  margin: 1em auto;
-  border-radius: 20px;
-  border: #2e4052 1px solid;
+  // padding: 0.5em 2em 2em 2em;
+  // margin: 1em auto;
+  // border-radius: 20px;
+  // border: #2e4052 1px solid;
+  text-align: center;
+
+  & h1 {
+    font-family: $secondaryFont;
+    font-size: 8em;
+  }
 }
 
 .fontExample {
@@ -38,4 +45,35 @@ img {
 
 a {
   text-decoration: none;
+  color: $accent2;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.page-wrapper {
+  padding-left: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 4fr 1fr;
+}
+
+.main {
+  grid-column: 1/5;
+  grid-row: 2/4;
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+}
+
+.sidebar {
+  grid-column: 5;
+  grid-row: 1/5;
+  background-color: $accent1;
+  padding: 0 2em;
+  color: $primaryColor;
+  font-family: $secondaryFont;
+  // position: fixed;
+  // float: right;
 }

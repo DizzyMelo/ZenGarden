@@ -79,14 +79,11 @@ body {
   margin: auto;
 }
 
-section,
-header {
-  text-align: center;
-}
 section h1,
 header h1 {
   font-family: "Jost", sans-serif;
   font-size: 8em;
+  text-align: center;
 }
 
 .fontExample {
@@ -119,11 +116,14 @@ ul li {
   grid-template-columns: 4fr 1fr;
 }
 
+.intro {
+  grid-column: 1/5;
+}
+
 .main {
   grid-column: 1/5;
   grid-row: 2/4;
-  display: grid;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: auto;
 }
 
 .sidebar {

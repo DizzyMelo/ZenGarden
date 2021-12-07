@@ -27,7 +27,7 @@ header {
 
   & h1 {
     font-family: $secondaryFont;
-    font-size: 8em;
+    font-size: 8vw;
     text-align: center;
     text-shadow: 2px 2px 8px $shadowColor;
   }
@@ -49,6 +49,10 @@ img {
 a {
   text-decoration: none;
   color: $accent2;
+}
+
+p {
+  line-height: 1.7em;
 }
 
 ul li {
@@ -101,19 +105,30 @@ ul li {
   & div {
     background-color: $accent1;
     color: white;
-    padding: 25px;
+    padding: 1em 5em;
     margin: 1em 0;
     box-shadow: 10px 10px 8px $shadowColor;
     border-radius: 15px 3px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
     
     &:nth-child(2n + 1) {
       background-color: $accent2;
       color: $accent1;
     }
 
+    & p {
+      font-size: 1.3em;
+    }
+
+    & h3 {
+      font-size: 2em;
+      font-family: $secondaryFont;
+      font-weight: 800;
+    }
+
     &:hover {
       box-shadow: none;
+      border-radius: 3px 15px;
       transform: scale(1.02, 1.02);
     }
   } 
@@ -123,4 +138,18 @@ footer {
   margin-top: 3em;
   display: flex;
   justify-content: space-around;
+
+  // & a:first-of-type {
+  //   display: none;
+  // }
+
+  & a {
+    visibility: hidden;
+  }
+  
+  & a:first-of-type::after {
+    content: url('https://source.unsplash.com/random/200x200');
+    visibility: visible;
+    display: block;
+  }
 }

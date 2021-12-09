@@ -23,7 +23,7 @@ section {
   // margin: 1em auto;
   // border-radius: 20px;
   // border: #2e4052 1px solid;
-  padding-left: 20px;
+  padding: 0 2em;
 
 
   & h1 {
@@ -31,6 +31,16 @@ section {
     font-size: 8vw;
     text-align: center;
     text-shadow: 2px 2px 8px $shadowColor;
+  }
+
+  h2, h3{
+    font-size: 2em;
+    font-family: $secondaryFont;
+    font-weight: 800;
+  }
+
+  & p {
+    font-size: 1.3em;
   }
 }
 
@@ -107,7 +117,7 @@ ul li {
     background-color: $accent1;
     color: white;
     padding: 1em 5em;
-    margin: 1em 0;
+    margin: 1em;
     box-shadow: 10px 10px 8px $shadowColor;
     border-radius: 15px 3px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
@@ -148,10 +158,26 @@ footer {
     visibility: hidden;
   }
 
+  & img {
+    height: 50px;
+    width: 50px;
+  }
+
   & a:first-of-type::after {
-    content: url('https://source.unsplash.com/random/200x200');
-    visibility: visible;
-    display: block;
+    @include imageBackground("https://grabbex.com/BYUI/WDD331/html-t.png")
+  }
+  
+  & a:nth-of-type(2)::after {
+    @include imageBackground("https://grabbex.com/BYUI/WDD331/csslogo-t.png")
+  }
+  & a:nth-of-type(3)::after {
+    @include imageBackground("https://grabbex.com/BYUI/WDD331/cc-t.png");
+  }
+  & a:nth-of-type(4)::after {
+    @include imageBackground("https://grabbex.com/BYUI/WDD331/accessibility-t.png");
+  }
+  & a:nth-of-type(5)::after {
+    @include imageBackground("https://grabbex.com/BYUI/WDD331/github-t.png");
   }
 }
 

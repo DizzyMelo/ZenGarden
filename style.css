@@ -80,13 +80,21 @@ body {
 }
 
 section {
-  padding-left: 20px;
+  padding: 0 2em;
 }
 section h1 {
   font-family: "Jost", sans-serif;
   font-size: 8vw;
   text-align: center;
   text-shadow: 2px 2px 8px #888888;
+}
+section h2, section h3 {
+  font-size: 2em;
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+}
+section p {
+  font-size: 1.3em;
 }
 
 .fontExample {
@@ -156,7 +164,7 @@ ul li {
   background-color: #2e4052;
   color: white;
   padding: 1em 5em;
-  margin: 1em 0;
+  margin: 1em;
   box-shadow: 10px 10px 8px #888888;
   border-radius: 15px 3px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-radius 0.3s ease-in-out;
@@ -187,10 +195,29 @@ footer {
 footer a {
   visibility: hidden;
 }
+footer img {
+  height: 50px;
+  width: 50px;
+}
 footer a:first-of-type::after {
-  content: url("https://source.unsplash.com/random/200x200");
+  content: url("https://grabbex.com/BYUI/WDD331/html-t.png");
   visibility: visible;
-  display: block;
+}
+footer a:nth-of-type(2)::after {
+  content: url("https://grabbex.com/BYUI/WDD331/csslogo-t.png");
+  visibility: visible;
+}
+footer a:nth-of-type(3)::after {
+  content: url("https://grabbex.com/BYUI/WDD331/cc-t.png");
+  visibility: visible;
+}
+footer a:nth-of-type(4)::after {
+  content: url("https://grabbex.com/BYUI/WDD331/accessibility-t.png");
+  visibility: visible;
+}
+footer a:nth-of-type(5)::after {
+  content: url("https://grabbex.com/BYUI/WDD331/github-t.png");
+  visibility: visible;
 }
 
 @media only screen and (max-width: 900px) {

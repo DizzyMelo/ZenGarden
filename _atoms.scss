@@ -50,6 +50,12 @@ span {
   margin: 0.5em;
 }
 
+@mixin imageBackground($url) {
+  content: url($url);
+  visibility: visible;
+  // display: block;
+}
+
 .circle-icon {
   @include circle();
 }

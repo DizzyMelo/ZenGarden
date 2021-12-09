@@ -79,6 +79,12 @@ body {
   margin: auto;
 }
 
+h2, h3 {
+  font-size: 2em;
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+}
+
 section {
   padding: 0 2em;
 }
@@ -87,11 +93,6 @@ section h1 {
   font-size: 8vw;
   text-align: center;
   text-shadow: 2px 2px 8px #888888;
-}
-section h2, section h3 {
-  font-size: 2em;
-  font-family: "Jost", sans-serif;
-  font-weight: 800;
 }
 section p {
   font-size: 1.3em;
@@ -135,6 +136,7 @@ ul li {
 }
 
 .main {
+  margin-top: -120px;
   grid-column: 1/5;
   grid-row: 2/4;
   grid-template-rows: auto;
@@ -175,11 +177,6 @@ ul li {
 }
 #zen-supporting div p {
   font-size: 1.3em;
-}
-#zen-supporting div h3 {
-  font-size: 2em;
-  font-family: "Jost", sans-serif;
-  font-weight: 800;
 }
 #zen-supporting div:hover {
   box-shadow: none;

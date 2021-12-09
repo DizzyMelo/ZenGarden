@@ -79,8 +79,10 @@ body {
   margin: auto;
 }
 
-section h1,
-header h1 {
+section {
+  padding-left: 20px;
+}
+section h1 {
   font-family: "Jost", sans-serif;
   font-size: 8vw;
   text-align: center;
@@ -114,7 +116,6 @@ ul li {
 }
 
 .page-wrapper {
-  padding-left: 20px;
   display: grid;
   grid-gap: 20px;
   grid-template-rows: 1fr 2fr;
@@ -190,6 +191,32 @@ footer a:first-of-type::after {
   content: url("https://source.unsplash.com/random/200x200");
   visibility: visible;
   display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    grid-row: 5/5;
+    grid-column: 1/5;
+  }
+  .sidebar .wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sidebar .wrapper ul {
+    padding-left: 0;
+  }
+
+  section {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .sidebar .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

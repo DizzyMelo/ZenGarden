@@ -117,6 +117,7 @@ p {
 
 ul li {
   list-style-type: none;
+  line-height: 2.5em;
 }
 
 .page-wrapper {
@@ -127,6 +128,9 @@ ul li {
 
 .intro {
   grid-column: 1;
+}
+.intro a {
+  text-shadow: 1px 1px 2px #888888;
 }
 
 .main {

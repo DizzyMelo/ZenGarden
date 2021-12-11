@@ -135,7 +135,6 @@ ul li {
 }
 
 .main {
-  margin-top: -120px;
   grid-column: 1/5;
   grid-row: 2/4;
   grid-template-rows: auto;
@@ -231,9 +230,13 @@ footer a:nth-of-type(5)::after {
     width: 80%;
   }
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 725px) {
   #zen-supporting div {
     padding: 1em;
+  }
+
+  section h1 {
+    font-size: 3em;
   }
 
   .sidebar .wrapper {
